@@ -1,0 +1,89 @@
+index html
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jc-5-webtech</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      {
+
+        const student = {
+          name: "Twoje imię",
+          surname: "Twoje nazwisko",
+          className: "4P",
+          age: 18
+        };
+
+        console.log(student.name);
+        console.log(student.surname);
+        console.log(student.className);
+        console.log(student.age);
+
+
+
+
+
+
+
+
+        const technology = {
+          name: "React",
+          category: "frontend",
+          hours: 8,
+          active: 4
+        };
+        console.log(technology.name);
+        console.log(technology.category);
+        console.log(technology.hours);
+        console.log(technology.active);
+
+
+
+
+
+
+
+
+
+
+
+
+        const technologies = [
+          {
+            id: 1,
+            name: "React",
+            category: "frontend"
+          },
+          {
+            id: 1,
+            name: "Node.js",
+            category: "backend"
+          },
+          {
+            id: 1,
+            name: "Express",
+            category: "backend"
+          },
+
+        ];
+
+        for(i=0;i<3;i++)
+        {
+          console.log(technologies[i].id);
+          console.log(technologies[i].name);
+          console.log(technologies[i].category);
+        }
+
+      }
+    </script>
+
+  </body>
+</html>
