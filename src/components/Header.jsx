@@ -12,25 +12,6 @@ function Header(){
     )
   }
 
-function Footer(){
-    return(
-      <footer>
-        <h4>WebTech</h4>
-      </footer>
-    )
-  }
-
-function App() {
-  return (
-    <div>
-      <Header/>
-      <Header/>
-      <Footer/>
-      <Footer/>
-    </div>
-  );
-  
-}
 
 
-export default App
+export default Header;
