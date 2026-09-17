@@ -3,31 +3,42 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-
-function Header(){
-    return(
-      <header>
-        <h1>WebTech</h1>
-      </header>
-    )
-  }
-
-function Footer(){
-    return(
-      <footer>
-        <h4>WebTech</h4>
-      </footer>
-    )
-  }
+import Header from "./components/header.jsx";
+import Footer from "./components/Footer.jsx";
+import Technology from './components/Technology.jsx';
+import Student from './components/Student.jsx';
+import Navigation from './components/Navigation.jsx';
+import InfoBox from './components/InfoBox.jsx';
+import CourseCard from './components/CourseCard.jsx';
+import Technologies from './components/Tablice.jsx';
 
 function App() {
   return (
-    <div>
+    <>
       <Header/>
-      <Header/>
+
+      <Navigation/>
+
+      <main>
+
+        <Technology/>
+
+        <Technology/>
+
+        <Technology/>
+
+      </main>
+
       <Footer/>
-      <Footer/>
-    </div>
+
+      <Student/>
+
+      <InfoBox/>
+
+      <Technologies/>
+
+      <CourseCard/>
+    </>
   );
   
 }
