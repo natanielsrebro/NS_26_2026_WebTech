@@ -1,13 +1,15 @@
-function Technology({ name, specyfikacja, cechy }) {
+
+
+  function Technology({ name, category, hours, onSelect }) {
   return (
     <section>
-      <h1>Technologia {name.name}</h1>
-      <p>Kategoria: {name.category}</p>
-      <p>Liczba godzin: {name.hours}</p>
-      <p>
-        Specyfikacja: {specyfikacja.type} {specyfikacja.lang}
-      </p>
-      <p>Features: {cechy[0].comps}</p>
+      <h2>{name}</h2>
+      <p>{category}</p>
+      <p>{hours}</p>
+
+      <button onClick={() => onSelect(name)}>
+        Wybierz
+      </button>
     </section>
   );
 }
