@@ -1,24 +1,37 @@
-import './App.css';
-import Technology from './components/Technology.jsx';
-import Pokaz from './components/Pokaz.jsx';
-import Product from './components/product.jsx';
+import technologies from './components/komp';
+import InfoBox from './components/InfoBox';
+import TechnologyList from './components/komp';
 
-function App() {
-  function selectProduct(name) {
-    console.log("Wybrano produkt: " + name);
-  }
+const App = () => {
+  const technologies = ['React', 'JavaScript', 'CSS', 'TypeScript'];
+
+  const handleTechClick = (techName) => {
+    console.log(`Kliknięto technologię: ${techName}`);
+  };
 
   return (
-    <section>
-      <Pokaz name="React" />
-
-      <Product
-        name="Laptop"
-        price={3500}
-        selectProduct={selectProduct}
-      />
-    </section>
+    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+      <h2>Wybierz technologię, aby zalogować ją w konsoli:</h2>
+      
+      <div>
+        
+        {technologies.map((tech, index) => (
+          <InfoBox 
+            key={index} 
+            name={tech} 
+            onClick={() => handleTechClick(tech)} 
+          />
+        ))}
+        
+      </div>
+      <div>
+        <TechnologyList/>
+      </div>
+    </div>
+    
   );
-}
+  
+  
+};
 
 export default App;

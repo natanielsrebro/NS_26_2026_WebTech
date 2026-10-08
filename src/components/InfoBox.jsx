@@ -1,19 +1,14 @@
-function InfoBox(){
-    return(
-        <div>
-      <h2>Informacje</h2>
+import React from 'react';
 
-      <p>To jest pierwszy akapit komponentu InfoBox.</p>
-
-      <p>To jest drugi akapit zawierający dodatkowe informacje.</p>
-
-      <ul>
-        <li>Pierwszy element</li>
-        <li>Drugi element</li>
-        <li>Trzeci element</li>
-      </ul>
-    </div>
-    );
-}
+const InfoBox = ({ name, onClick }) => {
+  return (
+    <button 
+      onClick={onClick}
+      style={{ margin: '0 5px', padding: '8px 16px', cursor: 'pointer' }}
+    >
+      {name}
+    </button>
+  );
+};
 
 export default InfoBox;
