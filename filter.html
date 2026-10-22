@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        const numbers = [4, 11, 18, 7, 25, 10];
+
+
+    const Wieksze = numbers.filter(num => num > 10);
+
+
+    const mniejszeWieksze = numbers.filter(num => num <= 10);
+
+
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+
+    console.log("Tablica:", numbers);
+    console.log("Liczby większe od 10:", Wieksze);
+    console.log("Liczby mniejsze lub równe 10:", mniejszeWieksze);
+    console.log("Liczby parzyste:", evenNumbers);
+
+        
+
+    </script>
+</body>
+</html>
